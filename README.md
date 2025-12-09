@@ -28,7 +28,7 @@ CREDIT_FACILITY  ACCOUNT_HOLDER
 This design ensures data integrity through foreign key relationships while maintaining normalized form (3NF) to eliminate redundancy.
 
 ### DFD
-!(DFD)[]
+![System Architecture](https://github.com/Torajabu/-FINANCIAL_INSTITUTION_DATABASE_MANAGEMENT_SYSTEM/blob/main/ARCHITECTURE.svg)
 
 ## Requirements
 
