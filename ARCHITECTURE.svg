@@ -1,0 +1,248 @@
+<svg width="1100" height="650" viewBox="0 0 1100 650" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        fill: #222222;
+      }
+      .subtitle {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 14px;
+        fill: #444444;
+      }
+      .section-title {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        fill: #222222;
+      }
+      .body-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 13px;
+        fill: #333333;
+      }
+      .badge-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 12px;
+        fill: #222222;
+      }
+      .metric-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 12px;
+        fill: #333333;
+      }
+    </style>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555555" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="40" text-anchor="middle" class="title">
+    FINANCIAL_INSTITUTION_DATABASE_MANAGEMENT_SYSTEM
+  </text>
+  <text x="550" y="65" text-anchor="middle" class="subtitle">
+    Data Flow Diagram & System Architecture
+  </text>
+
+  <!-- INPUT SECTION -->
+  <rect x="40" y="110" width="240" height="150" rx="12" ry="12" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1.5"/>
+  <text x="60" y="135" class="section-title">
+    Step 1 – Input
+  </text>
+  <text x="60" y="160" class="body-text">
+    • Source SQL script:
+  </text>
+  <text x="75" y="178" class="body-text">
+    financial_institution_database.sql
+  </text>
+  <text x="60" y="200" class="body-text">
+    • DDL: CREATE TABLE, PRIMARY KEY, FOREIGN KEY
+  </text>
+  <text x="60" y="222" class="body-text">
+    • DML: INSERT sample data for all tables
+  </text>
+  <text x="60" y="244" class="body-text">
+    • Authored by DBA / developer
+  </text>
+
+  <!-- PROCESSING SECTION (DBMS ENGINE) -->
+  <rect x="320" y="110" width="260" height="180" rx="12" ry="12" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5"/>
+  <text x="340" y="135" class="section-title">
+    Step 2 – DBMS Engine
+  </text>
+  <text x="340" y="160" class="body-text">
+    • Parses and validates SQL
+  </text>
+  <text x="340" y="182" class="body-text">
+    • Creates normalized tables
+  </text>
+  <text x="340" y="204" class="body-text">
+    • Applies PRIMARY/FOREIGN KEY constraints
+  </text>
+  <text x="340" y="226" class="body-text">
+    • Loads sample banking data
+  </text>
+  <text x="340" y="248" class="body-text">
+    • Enforces referential integrity
+  </text>
+
+  <!-- DATABASE SECTION (SCHEMA + TABLES) -->
+  <rect x="620" y="90" width="420" height="230" rx="12" ry="12" fill="#E8F5E9" stroke="#81C784" stroke-width="1.5"/>
+  <text x="640" y="118" class="section-title">
+    Step 3 – Relational Database Schema
+  </text>
+  <text x="640" y="140" class="body-text">
+    Normalized financial institution data model:
+  </text>
+
+  <!-- Table boxes inside schema -->
+  <!-- FINANCIAL_INSTITUTION -->
+  <rect x="640" y="155" width="180" height="40" rx="8" ry="8" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="650" y="178" class="body-text">
+    FINANCIAL_INSTITUTION
+  </text>
+
+  <!-- REGIONAL_OFFICE -->
+  <rect x="840" y="155" width="180" height="40" rx="8" ry="8" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="850" y="178" class="body-text">
+    REGIONAL_OFFICE
+  </text>
+
+  <!-- CUSTOMER_ACCOUNT -->
+  <rect x="640" y="205" width="180" height="40" rx="8" ry="8" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="650" y="228" class="body-text">
+    CUSTOMER_ACCOUNT
+  </text>
+
+  <!-- CREDIT_FACILITY -->
+  <rect x="840" y="205" width="180" height="40" rx="8" ry="8" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="850" y="228" class="body-text">
+    CREDIT_FACILITY
+  </text>
+
+  <!-- ACCOUNT_HOLDER -->
+  <rect x="740" y="255" width="180" height="40" rx="8" ry="8" fill="#C8E6C9" stroke="#66BB6A" stroke-width="1"/>
+  <text x="750" y="278" class="body-text">
+    ACCOUNT_HOLDER
+  </text>
+
+  <!-- SCHEMA RELATION TEXT -->
+  <text x="640" y="310" class="body-text">
+    • Hierarchy: Institution → Office → Account → Credit / Holder
+  </text>
+  <text x="640" y="332" class="body-text">
+    • All relations enforced via numeric PK/FK columns
+  </text>
+
+  <!-- OUTPUT SECTION -->
+  <rect x="620" y="360" width="420" height="190" rx="12" ry="12" fill="#F3E5F5" stroke="#BA68C8" stroke-width="1.5"/>
+  <text x="640" y="388" class="section-title">
+    Step 4 – Outputs & Consumers
+  </text>
+  <text x="640" y="413" class="body-text">
+    • SQL SELECT / JOIN queries across normalized tables
+  </text>
+  <text x="640" y="435" class="body-text">
+    • Ad-hoc analysis: customer segments, credit portfolios
+  </text>
+  <text x="640" y="457" class="body-text">
+    • Reporting layer: dashboards, summary reports
+  </text>
+  <text x="640" y="479" class="body-text">
+    • Educational use for DBMS / normalization practice
+  </text>
+
+  <!-- ARROWS BETWEEN SECTIONS -->
+  <!-- Input -> Processing -->
+  <line x1="280" y1="185" x2="320" y2="185" stroke="#555555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="280" y="175" class="subtitle">
+    SQL script
+  </text>
+
+  <!-- Processing -> Database -->
+  <line x1="580" y1="200" x2="620" y2="200" stroke="#555555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="580" y="190" class="subtitle">
+    DDL + DML execution
+  </text>
+
+  <!-- Database -> Output -->
+  <line x1="830" y1="330" x2="830" y2="360" stroke="#555555" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="840" y="348" class="subtitle">
+    Query results
+  </text>
+
+  <!-- Output feedback to DB (queries) -->
+  <line x1="1020" y1="430" x2="1020" y2="320" stroke="#AAAAAA" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="880" y="325" class="metric-text">
+    Application / analyst queries
+  </text>
+
+  <!-- TECHNOLOGY STACK BAND -->
+  <rect x="40" y="360" width="520" height="190" rx="12" ry="12" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="1.5"/>
+  <text x="60" y="388" class="section-title">
+    Technology Stack
+  </text>
+
+  <!-- Badges -->
+  <rect x="60" y="405" width="130" height="32" rx="16" ry="16" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="75" y="425" class="badge-text">
+    SQL / DDL / DML
+  </text>
+
+  <rect x="210" y="405" width="200" height="32" rx="16" ry="16" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="225" y="425" class="badge-text">
+    Relational DBMS (MySQL/PostgreSQL/etc.)
+  </text>
+
+  <rect x="430" y="405" width="110" height="32" rx="16" ry="16" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1"/>
+  <text x="445" y="425" class="badge-text">
+    GitHub (source)
+  </text>
+
+  <text x="60" y="455" class="body-text">
+    • Core asset is an SQL script defining schema and sample data.
+  </text>
+  <text x="60" y="477" class="body-text">
+    • Executed inside any SQL-compliant RDBMS for teaching, demos, or prototypes.
+  </text>
+  <text x="60" y="499" class="body-text">
+    • Can be integrated into applications, reporting tools, or ETL pipelines.
+  </text>
+
+  <!-- PERFORMANCE METRICS BOX -->
+  <rect x="60" y="520" width="280" height="90" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="75" y="542" class="section-title">
+    Performance & Integrity Notes
+  </text>
+  <text x="75" y="565" class="metric-text">
+    • Small demo dataset → fast schema creation and queries.
+  </text>
+  <text x="75" y="583" class="metric-text">
+    • PK/FK constraints guarantee 100% referential integrity.
+  </text>
+  <text x="75" y="601" class="metric-text">
+    • Scales by adding indexes, partitions, and more data.
+  </text>
+
+  <!-- LEGEND -->
+  <rect x="370" y="520" width="190" height="90" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="385" y="542" class="section-title">
+    Legend
+  </text>
+  <rect x="385" y="552" width="16" height="10" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1"/>
+  <text x="410" y="560" class="metric-text">Input</text>
+
+  <rect x="385" y="567" width="16" height="10" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1"/>
+  <text x="410" y="575" class="metric-text">Processing (DBMS)</text>
+
+  <rect x="385" y="582" width="16" height="10" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+  <text x="410" y="590" class="metric-text">Database schema / tables</text>
+
+  <rect x="385" y="597" width="16" height="10" fill="#F3E5F5" stroke="#BA68C8" stroke-width="1"/>
+  <text x="410" y="605" class="metric-text">Outputs & consumers</text>
+</svg>
