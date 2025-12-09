@@ -46,13 +46,13 @@
     FINANCIAL_INSTITUTION_DATABASE_MANAGEMENT_SYSTEM
   </text>
   <text x="550" y="65" text-anchor="middle" class="subtitle">
-    Data Flow Diagram & System Architecture
+    Data Flow Diagram &amp; System Architecture
   </text>
 
   <!-- INPUT SECTION -->
   <rect x="40" y="110" width="240" height="150" rx="12" ry="12" fill="#E3F2FD" stroke="#64B5F6" stroke-width="1.5"/>
   <text x="60" y="135" class="section-title">
-    Step 1 – Input
+    Step 1 - Input
   </text>
   <text x="60" y="160" class="body-text">
     • Source SQL script:
@@ -67,13 +67,13 @@
     • DML: INSERT sample data for all tables
   </text>
   <text x="60" y="244" class="body-text">
-    • Authored by DBA / developer
+    • Authored by DBA or developer
   </text>
 
   <!-- PROCESSING SECTION (DBMS ENGINE) -->
   <rect x="320" y="110" width="260" height="180" rx="12" ry="12" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1.5"/>
   <text x="340" y="135" class="section-title">
-    Step 2 – DBMS Engine
+    Step 2 - DBMS Engine
   </text>
   <text x="340" y="160" class="body-text">
     • Parses and validates SQL
@@ -82,7 +82,7 @@
     • Creates normalized tables
   </text>
   <text x="340" y="204" class="body-text">
-    • Applies PRIMARY/FOREIGN KEY constraints
+    • Applies primary and foreign key constraints
   </text>
   <text x="340" y="226" class="body-text">
     • Loads sample banking data
@@ -94,7 +94,7 @@
   <!-- DATABASE SECTION (SCHEMA + TABLES) -->
   <rect x="620" y="90" width="420" height="230" rx="12" ry="12" fill="#E8F5E9" stroke="#81C784" stroke-width="1.5"/>
   <text x="640" y="118" class="section-title">
-    Step 3 – Relational Database Schema
+    Step 3 - Relational Database Schema
   </text>
   <text x="640" y="140" class="body-text">
     Normalized financial institution data model:
@@ -133,28 +133,28 @@
 
   <!-- SCHEMA RELATION TEXT -->
   <text x="640" y="310" class="body-text">
-    • Hierarchy: Institution → Office → Account → Credit / Holder
+    • Hierarchy: Institution to Office to Account to Credit or Holder
   </text>
   <text x="640" y="332" class="body-text">
-    • All relations enforced via numeric PK/FK columns
+    • All relations enforced via numeric primary and foreign key columns
   </text>
 
   <!-- OUTPUT SECTION -->
   <rect x="620" y="360" width="420" height="190" rx="12" ry="12" fill="#F3E5F5" stroke="#BA68C8" stroke-width="1.5"/>
   <text x="640" y="388" class="section-title">
-    Step 4 – Outputs & Consumers
+    Step 4 - Outputs and Consumers
   </text>
   <text x="640" y="413" class="body-text">
-    • SQL SELECT / JOIN queries across normalized tables
+    • SQL SELECT and JOIN queries across normalized tables
   </text>
   <text x="640" y="435" class="body-text">
-    • Ad-hoc analysis: customer segments, credit portfolios
+    • Ad hoc analysis of customer segments and credit portfolios
   </text>
   <text x="640" y="457" class="body-text">
-    • Reporting layer: dashboards, summary reports
+    • Reporting layer for dashboards and summary reports
   </text>
   <text x="640" y="479" class="body-text">
-    • Educational use for DBMS / normalization practice
+    • Educational use for DBMS and normalization practice
   </text>
 
   <!-- ARROWS BETWEEN SECTIONS -->
@@ -167,7 +167,7 @@
   <!-- Processing -> Database -->
   <line x1="580" y1="200" x2="620" y2="200" stroke="#555555" stroke-width="2" marker-end="url(#arrowhead)"/>
   <text x="580" y="190" class="subtitle">
-    DDL + DML execution
+    DDL and DML execution
   </text>
 
   <!-- Database -> Output -->
@@ -179,7 +179,7 @@
   <!-- Output feedback to DB (queries) -->
   <line x1="1020" y1="430" x2="1020" y2="320" stroke="#AAAAAA" stroke-width="1.5" marker-end="url(#arrowhead)"/>
   <text x="880" y="325" class="metric-text">
-    Application / analyst queries
+    Application or analyst queries
   </text>
 
   <!-- TECHNOLOGY STACK BAND -->
@@ -191,42 +191,42 @@
   <!-- Badges -->
   <rect x="60" y="405" width="130" height="32" rx="16" ry="16" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1"/>
   <text x="75" y="425" class="badge-text">
-    SQL / DDL / DML
+    SQL, DDL, DML
   </text>
 
   <rect x="210" y="405" width="200" height="32" rx="16" ry="16" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1"/>
   <text x="225" y="425" class="badge-text">
-    Relational DBMS (MySQL/PostgreSQL/etc.)
+    Relational DBMS (MySQL or PostgreSQL)
   </text>
 
   <rect x="430" y="405" width="110" height="32" rx="16" ry="16" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="1"/>
   <text x="445" y="425" class="badge-text">
-    GitHub (source)
+    GitHub source
   </text>
 
   <text x="60" y="455" class="body-text">
     • Core asset is an SQL script defining schema and sample data.
   </text>
   <text x="60" y="477" class="body-text">
-    • Executed inside any SQL-compliant RDBMS for teaching, demos, or prototypes.
+    • Executed inside any SQL compliant RDBMS for demos or prototypes.
   </text>
   <text x="60" y="499" class="body-text">
-    • Can be integrated into applications, reporting tools, or ETL pipelines.
+    • Can be integrated into applications, reporting tools, or ETL.
   </text>
 
   <!-- PERFORMANCE METRICS BOX -->
   <rect x="60" y="520" width="280" height="90" rx="10" ry="10" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
   <text x="75" y="542" class="section-title">
-    Performance & Integrity Notes
+    Performance and Integrity Notes
   </text>
   <text x="75" y="565" class="metric-text">
-    • Small demo dataset → fast schema creation and queries.
+    • Small demo dataset gives instant schema creation and queries.
   </text>
   <text x="75" y="583" class="metric-text">
-    • PK/FK constraints guarantee 100% referential integrity.
+    • Primary and foreign keys guarantee referential integrity.
   </text>
   <text x="75" y="601" class="metric-text">
-    • Scales by adding indexes, partitions, and more data.
+    • Scales with indexes and partitioning as data volume grows.
   </text>
 
   <!-- LEGEND -->
@@ -241,8 +241,8 @@
   <text x="410" y="575" class="metric-text">Processing (DBMS)</text>
 
   <rect x="385" y="582" width="16" height="10" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
-  <text x="410" y="590" class="metric-text">Database schema / tables</text>
+  <text x="410" y="590" class="metric-text">Database schema or tables</text>
 
   <rect x="385" y="597" width="16" height="10" fill="#F3E5F5" stroke="#BA68C8" stroke-width="1"/>
-  <text x="410" y="605" class="metric-text">Outputs & consumers</text>
+  <text x="410" y="605" class="metric-text">Outputs and consumers</text>
 </svg>
